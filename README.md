@@ -42,3 +42,8 @@ Generates a comprehensive motherfucking report showing:
 - Complete list of all duplicates with their paths, sizes and all that memory you pissed away
 
 Now reclaim your disk space, motherfucker! Target those problematic duplicates like Jules Winnfield on a mission!
+
+# FAQs
+
+1. Did something weird happen you asshole?
+> The script got lost when you tried to install it, right? This is what happens when you install something without reading what is happening. Learn to read first!!
