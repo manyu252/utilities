@@ -4,16 +4,11 @@ This repo contains all the goddamn codes that aren't tied to any specific projec
 
 # INSTALLATION, MOTHERFUCKER
 
-Before you attempt to mess with ANY of these fucking codes, install EVERYTHING mentioned in the `requirements.txt`.
-Don't be a dumb motherfucker. Install it all in one goddamn go in a virtual environment. All the steps are given here, you brain-dead piece of shit.
+Before you attempt to mess with ANY of these fucking codes, install everything first. All the steps are given here, you brain-dead piece of shit. I made it easy for you to install because i know you know nothing about coding.
 
 ```bash
-python3 -m venv <your stupid-ass env name>
-source <your stupid-ass env name>/bin/activate
-pip3 install -r requirements.txt, BITCH!
+. ./install.sh
 ```
-If you did not read it properly and copy-pasted it with the word 'BITCH!', just fucking DIE. You don't deserve these codes anymore.
-NOW you can fuck around with these scripts. Don't come crying to me if you don't follow these simple-ass instructions!
 
 # 1. DuplicateDetective
 
@@ -46,4 +41,4 @@ Now reclaim your disk space, motherfucker! Target those problematic duplicates l
 # FAQs
 
 1. Did something weird happen you asshole?
-> The script got lost when you tried to install it, right? This is what happens when you install something without reading what is happening. Learn to read first!!
+> The script got lost when you tried to install it, right? This is what happens when you install something without reading what is happening. Learn to read first!! You are as naive as a high-school kid. Think about this for a second.
