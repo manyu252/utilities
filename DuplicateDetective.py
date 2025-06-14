@@ -30,6 +30,12 @@ def scan_folder(folder):
         print(f"GODDAMN ERROR scanning folder {folder}: {e}")
     return folder_files
 
+def process_folder_chunk(chunk):
+    result = []
+    for folder in chunk:
+        result.extend(scan_folder(folder))
+    return result
+
 def scan_files_parallel(base_folders, num_processes=None):
     # Use available CPU cores if not specified
     if num_processes is None:
@@ -47,7 +53,7 @@ def scan_files_parallel(base_folders, num_processes=None):
         folder_chunks = [base_folders[i:i+chunk_size] for i in range(0, len(base_folders), chunk_size)]
 
         with mp.Pool(processes=len(folder_chunks)) as pool:
-            results = pool.map(lambda chunk: [file for folder in chunk for file in scan_folder(folder)], folder_chunks)
+            results = pool.map(process_folder_chunk, folder_chunks)
         return [file for sublist in results for file in sublist]
 
 # Step 2 – Group by file size to quickly eliminate non-duplicates
